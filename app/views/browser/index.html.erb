@@ -1,11 +1,11 @@
 
-<center>
-	<h1>Test Card</h1>
+<div class="navbar">
+	<span class="logo">Open Trivia</span>
+</div>
 
 	
 <div class="card card-back">
 	<div class="logo">
-		Trivia Logo
 	</div>
 	
 	<div class="category">
@@ -14,20 +14,29 @@
 	<div class="caption">
 		Card Back
 	</div>
+	
+	<div class="qrcode">
+		<center>
+			<%= image_tag "qrcode.png" %>
+	
+	</div>
 </div>
 
 <div class="inputs">
 	Question:
 	<textarea id="question-input" rows="4"></textarea>
 	
-	Answer:
-	<textarea id="answer-input" rows="4"></textarea>
+	Hint / Options:
+	<textarea id="hint-input" rows="4"></textarea>
 	
-	Explanation:
-	<textarea id="explanation-input" rows="4"></textarea>
+	Answer:
+	<textarea id="answer-input" rows="2"></textarea>
+	
+	Details:
+	<textarea id="details-input" rows="4"></textarea>
 	
 	Reference:
-	<textarea id="reference-input" rows="4"></textarea>
+	<textarea id="reference-input" rows="2"></textarea>
 	
 	Primary Category:
 	<textarea id="primary-category-input" rows="1"></textarea>
@@ -54,11 +63,14 @@
 	<div class="question">
 	</div>
 	
+	<div class="hint">
+	</div>
+	
 	<div class="answer-block">
 		<div class="answer">
 		</div>
 		
-		<div class="explanation">
+		<div class="details">
 		</div>
 		
 		<div class="reference">
@@ -70,4 +82,3 @@
 	</div>
 </div>
 
-</center>
