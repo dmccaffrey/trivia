@@ -41,3 +41,18 @@ $(function() {
 
 
 });
+
+function clear_fields()
+{
+	$("#question-input").val("").triggerHandler("input");
+
+	$("#hint-input").val("").triggerHandler("input");
+
+	$("#answer-input").val("").triggerHandler("input");
+
+	$("#details-input").val("").triggerHandler("input");
+
+	$("#reference-input").val("").triggerHandler("input");
+
+	$("#primary-category-input").val("").triggerHandler("input");
+}

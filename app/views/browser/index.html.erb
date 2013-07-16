@@ -1,9 +1,4 @@
-
-<div class="navbar">
-	<span class="logo">Open Trivia</span>
-</div>
-
-	
+<center>
 <div class="card card-back">
 	<div class="logo">
 	</div>
@@ -23,25 +18,25 @@
 </div>
 
 <div class="inputs">
-	Question:
+	<div class="title">Question:</div>
 	<textarea id="question-input" rows="4"></textarea>
 	
-	Hint / Options:
+	<div class="title">Hint / Options:</div>
 	<textarea id="hint-input" rows="4"></textarea>
 	
-	Answer:
+	<div class="title">Answer:</div>
 	<textarea id="answer-input" rows="2"></textarea>
 	
-	Details:
+	<div class="title">Details:</div>
 	<textarea id="details-input" rows="4"></textarea>
 	
-	Reference:
+	<div class="title">Reference:</div>
 	<textarea id="reference-input" rows="2"></textarea>
 	
-	Primary Category:
+	<div class="title">Primary Category:</div>
 	<textarea id="primary-category-input" rows="1"></textarea>
 	
-	Secondary Categories:
+	<div class="title">Secondary Categories:</div>
 	<textarea id="secondary-category-input" rows="1"></textarea>
 	
 	<select id="difficulty-input">
@@ -57,6 +52,9 @@
 		<option>Intermediate</option>
 		<option>Master</option>
 	</select>
+	
+	<button class="ok">Submit for review</button>
+	<button class="cancel" onclick="clear_fields()">Clear Fields</button>
 </div>
 
 <div class="card card-front">
@@ -78,7 +76,8 @@
 	</div>
 	
 	<div class="caption">
-		Card Front
+		Card Face
 	</div>
 </div>
+</center>
 
