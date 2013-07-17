@@ -1,5 +1,6 @@
 class BrowserController < ApplicationController
-	def browser
+	def view
+		@card = Card.find(params[:id])
 	end
 
 	def index

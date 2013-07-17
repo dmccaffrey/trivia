@@ -17,10 +17,11 @@
 
 .inputs button {
 	display:	block;
-	border: 	1px solid #222;
+	border: 	2px solid #222;
 	border-radius:	3px;
 	padding:	4px;
 	width:		340px;
+	font-weight:	bold;
 }
 
 .ok {
@@ -49,7 +50,7 @@
 }
 
 .inputs textarea {
-	width:		340px;
+	width:		330px;
 	border:		2px solid #222;
 	margin-bottom:	0px;
 	padding:	3px;

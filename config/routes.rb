@@ -1,5 +1,7 @@
 Trivia::Application.routes.draw do
+  get "create/index"
   get "browser/browser"
+  get "creator/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,4 +57,5 @@ Trivia::Application.routes.draw do
   #     resources :products
   #   end
 	get ':controller(/:action(/:id))(.:format)'
+	post ':controller(/:action(/:id))(.:format)'
 end
