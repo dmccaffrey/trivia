@@ -1,42 +1,38 @@
 <center>
-<div class="card card-back">
-	<div class="logo">
-	</div>
-	
-	<div class="category">
-	</div>
-	
-	<div class="caption">
-		Card Back
-	</div>
-	
-	<div class="qrcode">
-		<center>
-			<%= image_tag "qrcode.png" %>
-	
-	</div>
-</div>
-<div class="card card-front">
-	<div class="question">
-	</div>
-	
-	<div class="hint">
-	</div>
-	
-	<div class="answer-block">
-		<div class="answer">
+
+<% if !@success %>
+	<h1>OH SNAP!: <%= @err_msg %></h1>
+<% end %>
+<% @cards.each do |card| %>
+	<a href="view/<%= card.id %>">
+	<div class="card-sm card-front">
+		<div class="question">
+			<%= card.question %>
 		</div>
+	
+		<div class="hint">
+			<%= card.hint %>
+		</div>
+	
+		<div class="answer-block">
+			<div class="answer">
+				<%= card.answer %>
+			</div>
 		
-		<div class="details">
-		</div>
+			<div class="details">
+				<%= card.details %>
+			</div>
 		
-		<div class="reference">
+			<div class="reference">
+				<%= card.reference %>
+			</div>
+		</div>
+	
+		<div class="caption">
+			<%= card.category %>
 		</div>
 	</div>
-	
-	<div class="caption">
-		Card Face
-	</div>
-</div>
+	</a>
+<% end %>
 </center>
 
